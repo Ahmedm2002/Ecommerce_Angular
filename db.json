@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "a31b",
+      "name": "Ahmed",
+      "email": "a@a.com",
+      "password": "12345",
+      "role": "user"
+    },
+    {
+      "id": "3376",
+      "name": "Ahmed",
+      "email": "ahmed@a.com",
+      "password": "asdfasf",
+      "role": "user"
+    },
+    {
+      "id": "a672",
+      "name": "Ahmed",
+      "email": "ahmed@a.com",
+      "password": "asdfasf",
+      "role": "user"
+    },
+    {
+      "id": "6510",
+      "name": "Ahmed",
+      "email": "ahmed@a.com",
+      "password": "asdfasf",
+      "role": "user"
+    }
+  ],
+  "products": []
+}

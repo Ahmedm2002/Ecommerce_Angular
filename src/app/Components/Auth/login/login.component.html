@@ -1,13 +1,15 @@
-<div class="row align-items-center justify-content-center mt-5">
-  <div class="col-4">
-    <form>
+<h3 class="text-center mt-2">Login</h3>
+<div class="row justify-content-center">
+  <div class="col-md-6 col-10">
+    <form [formGroup]="loginForm">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input
           type="email"
           class="form-control"
-          id="exampleInputEmail1"
+          id="email"
           aria-describedby="emailHelp"
+          formControlName="email"
         />
       </div>
       <div class="mb-3">
@@ -15,20 +17,59 @@
         <input
           type="password"
           class="form-control"
-          id="exampleInputPassword1"
+          id="password"
+          formControlName="password"
         />
       </div>
       <div class="row align-items-center justify-content-center">
         <div class="col-4">
           <button
-            type="submit"
-            (click)="login()"
             class="btn btn-primary col-12"
+            (click)="login()"
+            [disabled]="loginForm.invalid"
           >
-            Signup
+            Login
+          </button>
+        </div>
+        <div class="col-4">
+          <button
+            type="reset"
+            class="btn btn-secondary col-12"
+            (click)="this.loginForm.reset()"
+          >
+            Reset
           </button>
         </div>
       </div>
+      <div>Not a user <a routerLink="/signup">Register now</a></div>
     </form>
   </div>
 </div>
+
+<!-- Error Block   -->
+@if(loginForm.touched && loginForm.invalid){
+<div class="row m-4 p-1 text-danger">
+  <div class="row">
+    <span class="text-xl fw-bold fs-2">Errors:</span>
+  </div>
+  <ul>
+    <!-- Email validation -->
+    @if(loginForm.controls['email'].touched &&
+    loginForm.controls['email'].errors?.['required']){
+    <li><span>Email requrired</span></li>
+
+    } @if(loginForm.controls['email'].touched &&
+    loginForm.controls['email'].errors?.['email']){
+    <li><span>Invalid Email</span></li>
+    }
+
+    <!-- Password validation -->
+    @if(loginForm.controls['password'].touched ){ @if(
+    loginForm.controls['password'].errors?.['required']) {
+    <li>Password required</li>
+    } @if(loginForm.controls['password'].errors?.['minlength']){
+    <li>Password must be of 8 characters</li>
+    } }
+  </ul>
+</div>
+}
