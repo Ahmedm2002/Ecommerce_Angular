@@ -6,6 +6,8 @@ import { LayoutComponent } from './Components/layout/layout.component';
 import { authGuard } from './Services/Guards/authGuard/auth.guard';
 import { adminAuthGuard } from './Services/Guards/adminAuth/admin-auth.guard';
 import { HomeComponent } from './Components/home/home.component';
+import { UsersComponent } from './Components/Admin/users/users.component';
+import { ProductsComponent } from './Components/Admin/products/products.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +32,16 @@ export const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent,
         canActivate: [adminAuthGuard],
+        children: [
+          {
+            path: 'users',
+            component: UsersComponent,
+          },
+          {
+            path: 'products',
+            component: ProductsComponent,
+          },
+        ],
       },
     ],
   },

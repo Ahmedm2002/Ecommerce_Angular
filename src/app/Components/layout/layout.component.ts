@@ -9,12 +9,9 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './layout.component.css',
 })
 export class LayoutComponent implements OnInit {
-  storedUser: any = null;
+  storedUser = localStorage.getItem('user');
   router = inject(Router);
-
   ngOnInit(): void {
-    this.storedUser = localStorage.getItem('user');
-    this.storedUser = JSON.parse(this.storedUser);
     if (!this.storedUser) {
       this.router.navigateByUrl('login');
     }

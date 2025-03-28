@@ -1,18 +1,11 @@
 {
   "users": [
     {
-      "id": "fb9f",
-      "name": "Ahmed Mujtaba",
-      "email": "a@a.com",
-      "password": "12345",
-      "role": "user"
-    },
-    {
       "id": "fb9f1",
       "name": "Ahmed Mujtaba",
       "email": "a@a.com",
       "password": "12345",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "fb9f2",
@@ -148,6 +141,7 @@
       "role": "user"
     }
   ],
+
   "products": [
     {
       "id": 100001,
@@ -156,7 +150,8 @@
       "brand": "Dell",
       "price": 799.99,
       "description": "Dell Inspiron 15 5000 series with Intel Core i5, 8GB RAM, 512GB SSD.",
-      "imageUrl": "https://example.com/images/dell-laptop.jpg"
+      "imageUrl": "https://example.com/images/dell-laptop.jpg",
+      "quantity": 5
     },
     {
       "id": 100002,
@@ -165,7 +160,8 @@
       "brand": "Logitech",
       "price": 29.99,
       "description": "Logitech M330 wireless mouse with ergonomic design and long battery life.",
-      "imageUrl": "https://example.com/images/logitech-mouse.jpg"
+      "imageUrl": "https://example.com/images/logitech-mouse.jpg",
+      "quantity": 0
     },
     {
       "id": 100003,
@@ -174,7 +170,8 @@
       "brand": "Corsair",
       "price": 109.99,
       "description": "Corsair K70 RGB mechanical keyboard with Cherry MX switches and customizable lighting.",
-      "imageUrl": "https://example.com/images/corsair-keyboard.jpg"
+      "imageUrl": "https://example.com/images/corsair-keyboard.jpg",
+      "quantity": 3
     },
     {
       "id": 100004,
@@ -183,7 +180,8 @@
       "brand": "Samsung",
       "price": 349.99,
       "description": "Samsung 27-inch Smart Monitor with built-in streaming apps and USB-C connectivity.",
-      "imageUrl": "https://example.com/images/samsung-monitor.jpg"
+      "imageUrl": "https://example.com/images/samsung-monitor.jpg",
+      "quantity": 0
     },
     {
       "id": 100005,
@@ -192,7 +190,8 @@
       "brand": "Seagate",
       "price": 89.99,
       "description": "Seagate 1TB external hard drive with USB 3.0 and backup software.",
-      "imageUrl": "https://example.com/images/seagate-harddrive.jpg"
+      "imageUrl": "https://example.com/images/seagate-harddrive.jpg",
+      "quantity": 7
     },
     {
       "id": 100006,
@@ -201,7 +200,8 @@
       "brand": "Razer",
       "price": 129.99,
       "description": "Razer Kraken Ultimate gaming headset with surround sound and noise-canceling microphone.",
-      "imageUrl": "https://example.com/images/razer-headset.jpg"
+      "imageUrl": "https://example.com/images/razer-headset.jpg",
+      "quantity": 12
     },
     {
       "id": 100007,
@@ -210,7 +210,8 @@
       "brand": "ASUS",
       "price": 249.99,
       "description": "ASUS TUF 24-inch gaming monitor with 144Hz refresh rate and adaptive sync.",
-      "imageUrl": "https://example.com/images/asus-gaming-monitor.jpg"
+      "imageUrl": "https://example.com/images/asus-gaming-monitor.jpg",
+      "quantity": 2
     },
     {
       "id": 100008,
@@ -219,7 +220,8 @@
       "brand": "Logitech",
       "price": 59.99,
       "description": "Logitech C920 HD Pro webcam for video streaming and conferencing.",
-      "imageUrl": "https://example.com/images/logitech-webcam.jpg"
+      "imageUrl": "https://example.com/images/logitech-webcam.jpg",
+      "quantity": 0
     },
     {
       "id": 100009,
@@ -228,7 +230,8 @@
       "brand": "Anker",
       "price": 99.99,
       "description": "Anker USB-C docking station with dual display support and fast charging capabilities.",
-      "imageUrl": "https://example.com/images/anker-dock.jpg"
+      "imageUrl": "https://example.com/images/anker-dock.jpg",
+      "quantity": 8
     },
     {
       "id": 100010,
@@ -237,7 +240,8 @@
       "brand": "Apple",
       "price": 329.99,
       "description": "Apple iPad 10.2-inch Wi-Fi 32GB with Retina display and A12 Bionic chip.",
-      "imageUrl": "https://example.com/images/apple-ipad.jpg"
+      "imageUrl": "https://example.com/images/apple-ipad.jpg",
+      "quantity": 3
     },
     {
       "id": 100011,
@@ -246,7 +250,8 @@
       "brand": "JBL",
       "price": 59.99,
       "description": "JBL Flip 5 portable Bluetooth speaker with deep bass and waterproof design.",
-      "imageUrl": "https://example.com/images/jbl-speaker.jpg"
+      "imageUrl": "https://example.com/images/jbl-speaker.jpg",
+      "quantity": 6
     },
     {
       "id": 100012,
@@ -255,7 +260,8 @@
       "brand": "Samsung",
       "price": 999.99,
       "description": "Samsung Galaxy S21 with 5G connectivity, 128GB storage, and a 64MP camera.",
-      "imageUrl": "https://example.com/images/samsung-s21.jpg"
+      "imageUrl": "https://example.com/images/samsung-s21.jpg",
+      "quantity": 1
     },
     {
       "id": 100013,
@@ -264,7 +270,8 @@
       "brand": "Apple",
       "price": 399.99,
       "description": "Apple Watch Series 6 with blood oxygen sensor and ECG capabilities.",
-      "imageUrl": "https://example.com/images/apple-watch.jpg"
+      "imageUrl": "https://example.com/images/apple-watch.jpg",
+      "quantity": 0
     },
     {
       "id": 100014,
@@ -273,7 +280,8 @@
       "brand": "Sony",
       "price": 149.99,
       "description": "Sony WF-1000XM4 noise-canceling wireless earbuds with long battery life.",
-      "imageUrl": "https://example.com/images/sony-earbuds.jpg"
+      "imageUrl": "https://example.com/images/sony-earbuds.jpg",
+      "quantity": 4
     },
     {
       "id": 100015,
@@ -282,7 +290,8 @@
       "brand": "Anker",
       "price": 39.99,
       "description": "Anker PowerCore 10000mAh portable power bank for fast charging.",
-      "imageUrl": "https://example.com/images/anker-powerbank.jpg"
+      "imageUrl": "https://example.com/images/anker-powerbank.jpg",
+      "quantity": 9
     },
     {
       "id": 100016,
@@ -291,7 +300,8 @@
       "brand": "LG",
       "price": 799.99,
       "description": "LG 55-inch 4K UHD Smart TV with webOS and Dolby Vision support.",
-      "imageUrl": "https://example.com/images/lg-4k-tv.jpg"
+      "imageUrl": "https://example.com/images/lg-4k-tv.jpg",
+      "quantity": 6
     },
     {
       "id": 100017,
@@ -300,7 +310,8 @@
       "brand": "Belkin",
       "price": 29.99,
       "description": "Belkin BoostCharge 10W wireless charger for fast charging.",
-      "imageUrl": "https://example.com/images/belkin-charger.jpg"
+      "imageUrl": "https://example.com/images/belkin-charger.jpg",
+      "quantity": 0
     },
     {
       "id": 100018,
@@ -309,7 +320,8 @@
       "brand": "DXRacer",
       "price": 299.99,
       "description": "DXRacer Formula Series gaming chair with ergonomic design and adjustable armrests.",
-      "imageUrl": "https://example.com/images/dxracer-chair.jpg"
+      "imageUrl": "https://example.com/images/dxracer-chair.jpg",
+      "quantity": 10
     },
     {
       "id": 100019,
@@ -318,7 +330,8 @@
       "brand": "Samsung",
       "price": 129.99,
       "description": "Samsung T5 500GB portable external SSD with USB-C interface.",
-      "imageUrl": "https://example.com/images/samsung-ssd.jpg"
+      "imageUrl": "https://example.com/images/samsung-ssd.jpg",
+      "quantity": 3
     },
     {
       "id": 100020,
@@ -327,7 +340,8 @@
       "brand": "HP",
       "price": 649.99,
       "description": "HP Pavilion desktop with Intel Core i5, 8GB RAM, 1TB HDD, and Windows 10.",
-      "imageUrl": "https://example.com/images/hp-desktop.jpg"
+      "imageUrl": "https://example.com/images/hp-desktop.jpg",
+      "quantity": 0
     }
   ]
 }

@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div *ngIf="allProducts.length; else noProducts">
+    <h2 class="text-center">All Products</h2>
+    <table class="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th scope="col">Sr.No</th>
+          <th scope="col">Product Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Description</th>
+          <th scope="col">Image Url</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of allProducts; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | currency }}</td>
+          @if(product?.quantity <= 0 ){
+          <td class="text-danger">Out of Stock</td>
+          }@else {
+          <td>{{ product.quantity }}</td>
+          }
+          <td>{{ product.description }}</td>
+          <td>{{ product.imageUrl }}</td>
+          <!-- <td
+            [ngClass]="
+              user.role == 'admin' || user.role == 'Admin'
+                ? 'text-success fw-bold'
+                : 'text-secondary'
+            "
+          >
+            {{ user.role }}
+          </td>  -->
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger ms-2">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noProducts>
+    <div class="text-warning text-center mt-4">
+      <h4>No users found.</h4>
+    </div>
+  </ng-template>
+</div>
