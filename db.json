@@ -92,13 +92,6 @@
       "role": "admin"
     },
     {
-      "id": "fb9f14",
-      "name": "Hassan Ali",
-      "email": "hassan@a.com",
-      "password": "12345",
-      "role": "user"
-    },
-    {
       "id": "fb9f15",
       "name": "Razia Bibi",
       "email": "razia@a.com",
@@ -141,30 +134,9 @@
       "role": "user"
     }
   ],
-
   "products": [
     {
-      "id": 100001,
-      "name": "Laptop",
-      "category": "Computers",
-      "brand": "Dell",
-      "price": 799.99,
-      "description": "Dell Inspiron 15 5000 series with Intel Core i5, 8GB RAM, 512GB SSD.",
-      "imageUrl": "https://example.com/images/dell-laptop.jpg",
-      "quantity": 5
-    },
-    {
-      "id": 100002,
-      "name": "Wireless Mouse",
-      "category": "Accessories",
-      "brand": "Logitech",
-      "price": 29.99,
-      "description": "Logitech M330 wireless mouse with ergonomic design and long battery life.",
-      "imageUrl": "https://example.com/images/logitech-mouse.jpg",
-      "quantity": 0
-    },
-    {
-      "id": 100003,
+      "id": "100003",
       "name": "Mechanical Keyboard",
       "category": "Accessories",
       "brand": "Corsair",
@@ -174,7 +146,7 @@
       "quantity": 3
     },
     {
-      "id": 100004,
+      "id": "100004",
       "name": "Smart Monitor",
       "category": "Computers",
       "brand": "Samsung",
@@ -184,7 +156,7 @@
       "quantity": 0
     },
     {
-      "id": 100005,
+      "id": "100005",
       "name": "External Hard Drive",
       "category": "Storage",
       "brand": "Seagate",
@@ -194,7 +166,7 @@
       "quantity": 7
     },
     {
-      "id": 100006,
+      "id": "100006",
       "name": "Gaming Headset",
       "category": "Accessories",
       "brand": "Razer",
@@ -204,7 +176,7 @@
       "quantity": 12
     },
     {
-      "id": 100007,
+      "id": "100007",
       "name": "Gaming Monitor",
       "category": "Computers",
       "brand": "ASUS",
@@ -214,7 +186,7 @@
       "quantity": 2
     },
     {
-      "id": 100008,
+      "id": "100008",
       "name": "Webcam",
       "category": "Accessories",
       "brand": "Logitech",
@@ -224,7 +196,7 @@
       "quantity": 0
     },
     {
-      "id": 100009,
+      "id": "100009",
       "name": "USB-C Docking Station",
       "category": "Accessories",
       "brand": "Anker",
@@ -234,7 +206,7 @@
       "quantity": 8
     },
     {
-      "id": 100010,
+      "id": "100010",
       "name": "Tablet",
       "category": "Computers",
       "brand": "Apple",
@@ -244,7 +216,7 @@
       "quantity": 3
     },
     {
-      "id": 100011,
+      "id": "100011",
       "name": "Bluetooth Speaker",
       "category": "Accessories",
       "brand": "JBL",
@@ -254,7 +226,7 @@
       "quantity": 6
     },
     {
-      "id": 100012,
+      "id": "100012",
       "name": "Smartphone",
       "category": "Computers",
       "brand": "Samsung",
@@ -264,7 +236,7 @@
       "quantity": 1
     },
     {
-      "id": 100013,
+      "id": "100013",
       "name": "Smartwatch",
       "category": "Accessories",
       "brand": "Apple",
@@ -274,7 +246,7 @@
       "quantity": 0
     },
     {
-      "id": 100014,
+      "id": "100014",
       "name": "Wireless Earbuds",
       "category": "Accessories",
       "brand": "Sony",
@@ -284,7 +256,7 @@
       "quantity": 4
     },
     {
-      "id": 100015,
+      "id": "100015",
       "name": "Power Bank",
       "category": "Accessories",
       "brand": "Anker",
@@ -294,7 +266,7 @@
       "quantity": 9
     },
     {
-      "id": 100016,
+      "id": "100016",
       "name": "4K TV",
       "category": "Computers",
       "brand": "LG",
@@ -304,7 +276,7 @@
       "quantity": 6
     },
     {
-      "id": 100017,
+      "id": "100017",
       "name": "Wireless Charger",
       "category": "Accessories",
       "brand": "Belkin",
@@ -314,7 +286,7 @@
       "quantity": 0
     },
     {
-      "id": 100018,
+      "id": "100018",
       "name": "Gaming Chair",
       "category": "Accessories",
       "brand": "DXRacer",
@@ -324,7 +296,7 @@
       "quantity": 10
     },
     {
-      "id": 100019,
+      "id": "100019",
       "name": "External SSD",
       "category": "Storage",
       "brand": "Samsung",
@@ -334,7 +306,7 @@
       "quantity": 3
     },
     {
-      "id": 100020,
+      "id": "100020",
       "name": "Desktop Computer",
       "category": "Computers",
       "brand": "HP",

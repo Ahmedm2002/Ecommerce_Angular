@@ -26,22 +26,3 @@ export class UsersService {
     return this.http.get(`${this.apiUrl}users?email=${user?.email}`);
   }
 }
-
-// Custom id generator function
-// charArray: string[] = [
-//   ...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-// ];
-// randomChar(): string {
-//   return this.charArray[
-//     Math.floor(Math.random() * this.charArray.length) + 1
-//   ];
-// }
-// generateUserId() {
-//   let userId = '';
-//   const idLenght = 10;
-//   for (let i = 0; i <= idLenght; i++) {
-//     userId += this.randomChar();
-//   }
-//   console.log(userId);
-//   return userId;
-// }

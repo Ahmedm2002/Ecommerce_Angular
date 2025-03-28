@@ -16,4 +16,15 @@ export class ProductsComponent implements OnInit {
       this.allProducts = res;
     });
   }
+
+  deleteProduct(delProduct: any) {
+    console.log(delProduct);
+    this.productService.deleteProduct(delProduct.id).subscribe((res) => {
+      alert('Product deleted');
+      this.allProducts = this.allProducts.filter(
+        (product) => product.id !== delProduct.id
+      );
+      console.log(this.allProducts);
+    });
+  }
 }
