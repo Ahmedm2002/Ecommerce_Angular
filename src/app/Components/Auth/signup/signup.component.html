@@ -32,6 +32,20 @@
           formControlName="password"
         />
       </div>
+
+      <div class="mb-3">
+        <label for="userRole" class="form-label">Select Role</label>
+        <select
+          id="userRole"
+          formControlName="role"
+          class="form-select"
+          aria-label="Default select example"
+        >
+          <option value=""></option>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
       <div class="row align-items-center justify-content-center">
         <div class="col-4">
           <button
@@ -91,6 +105,12 @@
     } @if(signUpForm.controls['password'].errors?.['minlength']){
     <li>Password must be of 8 characters</li>
     } }
+
+    <!-- User role Validation -->
+    @if(signUpForm.controls['role'].touched ){ @if(
+    signUpForm.controls['role'].errors?.['required']) {
+    <li>Please select a role</li>
+    }}
   </ul>
 </div>
 }

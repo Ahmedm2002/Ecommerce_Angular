@@ -19,34 +19,26 @@ export class SignupComponent {
   constructor(private userService: UsersService, private router: Router) {}
 
   signUpForm: FormGroup = new FormGroup({
-    name: new FormControl('Ahmed', [
-      Validators.required,
-      Validators.minLength(3),
-    ]),
-    email: new FormControl('ahmed@a.com', [
+    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    email: new FormControl('', [
       Validators.required,
       Validators.email,
       Validators.minLength(5),
     ]),
-    password: new FormControl('asdfasf', [
+    password: new FormControl('', [
       Validators.required,
       Validators.minLength(5),
     ]),
-    role: new FormControl('user'),
+    role: new FormControl('', [Validators.required]),
   });
 
   signup(event: Event) {
     event.preventDefault();
-    const { name, email, password } = this.signUpForm.value;
     const newUser: IUser = {
-      name,
-      email,
-      password,
-      role: 'user',
+      ...this.signUpForm.value,
     };
     this.userService.createUser(this.signUpForm.value).subscribe(
       (res: any) => {
-        alert('Success');
         console.log(res);
         this.signUpForm.reset();
         localStorage.setItem('user', JSON.stringify(res));
@@ -58,7 +50,6 @@ export class SignupComponent {
       },
       (error) => {
         console.log(error);
-        alert(`Error: ${error}`);
       }
     );
   }

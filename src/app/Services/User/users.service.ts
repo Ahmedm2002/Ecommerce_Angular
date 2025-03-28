@@ -14,8 +14,12 @@ export class UsersService {
     return this.http.post(`${this.apiUrl}users`, user);
   }
 
-  getUser(user: IUser) {
-    return this.http.get(`${this.apiUrl}/users`);
+  getAllUsers() {
+    return this.http.get(`${this.apiUrl}users`);
+  }
+
+  deleteUser(userId: string | undefined) {
+    return this.http.delete(`${this.apiUrl}users/${userId}`);
   }
 }
 

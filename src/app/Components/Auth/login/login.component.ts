@@ -24,9 +24,6 @@ export class LoginComponent {
       password,
       email,
     };
-    this.userService.getUser(newUser).subscribe((res) => {
-      console.log(res);
-    });
   }
 
   loginForm: FormGroup = new FormGroup({
