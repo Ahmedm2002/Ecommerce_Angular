@@ -21,6 +21,10 @@ export class UsersService {
   deleteUser(userId: string | undefined) {
     return this.http.delete(`${this.apiUrl}users/${userId}`);
   }
+
+  login(user: any) {
+    return this.http.get(`${this.apiUrl}users?email=${user?.email}`);
+  }
 }
 
 // Custom id generator function

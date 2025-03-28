@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row d-flex flex-wrap justify-content-center p-2">
+      <div
+        class="card mb-4 mx-4"
+        style="max-width: 320px"
+        *ngFor="let product of productList"
+      >
+        <!-- <img
+          [src]="product.imageUrl"
+          alt="Product Image"
+          [alt]="product.name"
+          class="card-img-top"
+        /> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="h5 mb-0">{{ product.price | currency }}</span>
+            <div>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+              <small class="text-muted">(4.5)</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between bg-light">
+          <button class="btn btn-primary btn-sm col-12">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

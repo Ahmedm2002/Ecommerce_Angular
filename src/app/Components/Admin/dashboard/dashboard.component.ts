@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { UsersService } from '../../../Services/User/users.service';
 import { IUser } from '../../../Models/Interface/user.interface';
 import { CommonModule } from '@angular/common';
@@ -9,16 +9,14 @@ import { CommonModule } from '@angular/common';
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
   allUsers: IUser[] = [];
-  constructor(private userService: UsersService) {
+  userService = inject(UsersService);
+  ngOnInit(): void {
     this.userService.getAllUsers().subscribe((res: any) => {
       this.allUsers = res;
     });
-    console.log(Boolean(this.allUsers));
-    console.log(Boolean(this.allUsers.length));
   }
-
   editUser(user: IUser) {
     console.log(user);
   }

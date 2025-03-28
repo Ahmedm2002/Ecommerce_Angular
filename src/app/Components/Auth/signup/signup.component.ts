@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -16,7 +16,8 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './signup.component.css',
 })
 export class SignupComponent {
-  constructor(private userService: UsersService, private router: Router) {}
+  userService = inject(UsersService);
+  router = inject(Router);
 
   signUpForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),

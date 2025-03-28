@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -16,21 +16,45 @@ import { IUser } from '../../../Models/Interface/user.interface';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
-export class LoginComponent {
-  constructor(private userService: UsersService, private router: Router) {}
+export class LoginComponent implements OnInit {
+  ngOnInit(): void {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      const user: IUser = JSON.parse('user');
+      if (user.role == 'admin') {
+        this.router.navigateByUrl('dashboard');
+      } else {
+        this.router.navigateByUrl('');
+      }
+    }
+  }
+  userService = inject(UsersService);
+  router = inject(Router);
+  loggInUser!: IUser;
   login() {
-    const { email, password } = this.loginForm.value;
-    const newUser: IUser = {
-      password,
-      email,
-    };
+    this.userService.login(this.loginForm.value).subscribe((res: any) => {
+      this.loggInUser = res[0];
+
+      if (this.loggInUser.password == this.loginForm.value['password']) {
+        if (localStorage.getItem('user')) {
+          localStorage.removeItem('user');
+        }
+        localStorage.setItem('user', JSON.stringify(this.loggInUser));
+        if (this.loggInUser.role == 'admin') {
+          this.router.navigateByUrl('dashboard');
+        } else this.router.navigateByUrl('');
+        alert('Login Success');
+      } else {
+        alert('Incorrect password, please try again !');
+      }
+    });
   }
 
   loginForm: FormGroup = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [
+    email: new FormControl('a@a.com', [Validators.required, Validators.email]),
+    password: new FormControl('12345', [
       Validators.required,
-      Validators.minLength(5),
+      Validators.minLength(4),
     ]),
   });
 }
