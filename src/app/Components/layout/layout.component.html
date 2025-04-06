@@ -15,19 +15,161 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
+        @if(user?.role==='admin'){
         <ul
           class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
           style="--bs-scroll-height: 100px"
         >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="dashboard"
+              >Dashboard</a
+            >
           </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="dashboard/users"
+              >Users</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="dashboard/products"
+              >Products</a
+            >
+          </li>
+        </ul>
+        }@else {
+        <ul
+          class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="--bs-scroll-height: 100px"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="dashboard"
+              >All Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="categories/computers"
+              >Computers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="categories/storage"
+              >Storage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="categories/accessories"
+              >Accessories</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="categories"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <!-- <li>
+                <a class="dropdown-item" routerLink="categories/computers"
+                  >Computers</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="categories/storage"
+                  >Storage</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="categories/accessories"
+                  >Accessories</a
+                >
+              </li> -->
+              <!-- <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="dashboard/products"
+              >Cart</a
+            >
+          </li>
+        </ul>
+        }
 
-          <!-- <li class="nav-item">
+        <ul class="navbar-nav" *ngIf="!storedUser">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="signup"
+              >Sign Up</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="login"
+              >Login</a
+            >
+          </li>
+        </ul>
+        <div class="d-flex" *ngIf="storedUser">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link inactive" aria-current="page" href="#">
+                {{ user["name"] }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-danger" type="submit" (click)="logOut()">
+                Log Out
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="p-2 m-3 flex-fill">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="text-center bg-body-tertiary mt-auto">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+      © 2020 Copyright
+      <a class="text-body" href="#"></a>
+    </div>
+  </footer>
+</div>
+
+<!-- <li class="nav-item">
           <a class="nav-link" href="#">Cart</a>
         </li> -->
-          <!-- Drop Down -->
-          <!-- <li class="nav-item dropdown">
+<!-- Drop Down -->
+<!-- <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -50,38 +192,3 @@
             >Checkout</a
           >
         </li> -->
-        </ul>
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="signup"
-              >Sign Up</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="login"
-              >Login</a
-            >
-          </li>
-        </ul>
-        <form class="d-flex">
-          <button class="btn btn-danger" type="submit" (click)="logOut()">
-            Log Out
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- Stored User:
-  {{ storedUser | json }} -->
-  <div class="p-2 m-3 flex-fill">
-    <router-outlet></router-outlet>
-  </div>
-
-  <footer class="text-center bg-body-tertiary mt-auto">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2020 Copyright:
-      <a class="text-body" href="#">Ahmed Mujtaba</a>
-    </div>
-  </footer>
-</div>

@@ -14,12 +14,10 @@ export class ProductsService {
   }
 
   deleteProduct(productId: string) {
-    console.log('id', typeof productId);
-    console.log(`Api Url: ${this.apiUrl}products/${productId}`);
     return this.http.delete(`${this.apiUrl}products/${productId}`);
   }
 
-  addProduct(product: IProduct) {
-    return this.http.post(`${this.apiUrl}/products`, product);
+  newProduct(product: IProduct) {
+    return this.http.post(`${this.apiUrl}products`, product);
   }
 }

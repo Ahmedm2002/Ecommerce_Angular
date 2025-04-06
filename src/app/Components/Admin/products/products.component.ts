@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ProductsService } from '../../../Services/Products/products.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
@@ -18,13 +19,13 @@ export class ProductsComponent implements OnInit {
   }
 
   deleteProduct(delProduct: any) {
-    console.log(delProduct);
-    this.productService.deleteProduct(delProduct.id).subscribe((res) => {
-      alert('Product deleted');
-      this.allProducts = this.allProducts.filter(
-        (product) => product.id !== delProduct.id
-      );
-      console.log(this.allProducts);
-    });
+    const confirmDelete = confirm(`${delProduct.name} will be deleted `);
+    if (confirmDelete) {
+      this.productService.deleteProduct(delProduct.id).subscribe((res) => {
+        this.allProducts = this.allProducts.filter(
+          (product) => product.id !== delProduct.id
+        );
+      });
+    }
   }
 }

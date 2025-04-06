@@ -1,6 +1,7 @@
-import { CommonModule, JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { IUser } from '../../Models/Interface/user.interface';
 
 @Component({
   selector: 'app-layout',
@@ -10,10 +11,14 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class LayoutComponent implements OnInit {
   storedUser = localStorage.getItem('user');
+  user: any;
+
   router = inject(Router);
   ngOnInit(): void {
     if (!this.storedUser) {
       this.router.navigateByUrl('login');
+    } else {
+      this.user = JSON.parse(this.storedUser);
     }
   }
 

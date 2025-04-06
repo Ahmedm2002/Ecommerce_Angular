@@ -40,7 +40,6 @@ export class SignupComponent {
     };
     this.userService.createUser(this.signUpForm.value).subscribe(
       (res: any) => {
-        console.log(res);
         this.signUpForm.reset();
         localStorage.setItem('user', JSON.stringify(res));
         if (newUser.role == 'user') {
@@ -50,7 +49,7 @@ export class SignupComponent {
         }
       },
       (error) => {
-        console.log(error);
+        alert(`An error occured ${error}. Please try again`);
       }
     );
   }

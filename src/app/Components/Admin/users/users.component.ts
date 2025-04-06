@@ -20,9 +20,19 @@ export class UsersComponent implements OnInit {
   editUser(user: IUser) {
     console.log(user);
   }
-  deleteUser(userId: string | undefined) {
-    this.userService.deleteUser(userId).subscribe((res: any) => {
-      this.allUsers = this.allUsers.filter((user) => user.id != userId);
-    });
+  deleteUser(userDel: any) {
+    if (userDel.role == 'admin') {
+      if (confirm(`Are you sure to delete admin ${userDel.name}`)) {
+        this.userService.deleteUser(userDel.id).subscribe((res: any) => {
+          this.allUsers = this.allUsers.filter((user) => user.id != userDel.id);
+        });
+      }
+    } else {
+      if (confirm(`${userDel.name} will be deleted`)) {
+        this.userService.deleteUser(userDel.id).subscribe((res: any) => {
+          this.allUsers = this.allUsers.filter((user) => user.id != userDel.id);
+        });
+      }
+    }
   }
 }

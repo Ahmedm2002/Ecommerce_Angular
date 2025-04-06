@@ -132,13 +132,6 @@
       "email": "rashid@a.com",
       "password": "12345",
       "role": "user"
-    },
-    {
-      "id": "ce02",
-      "name": "Ahmed",
-      "email": "aa@a.com",
-      "password": "12345",
-      "role": "user"
     }
   ],
   "products": [
@@ -320,15 +313,6 @@
       "price": 649.99,
       "description": "HP Pavilion desktop with Intel Core i5, 8GB RAM, 1TB HDD, and Windows 10.",
       "imageUrl": "https://example.com/images/hp-desktop.jpg",
-      "quantity": 0
-    },
-    {
-      "id": "b4cb",
-      "name": "Mouse",
-      "price": 0,
-      "description": "Description",
-      "category": "Computers",
-      "imageUrl": "home/ahmedmujtaba/Pictures/goldenPearl.png",
       "quantity": 0
     }
   ]
