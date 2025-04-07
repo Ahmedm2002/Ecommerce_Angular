@@ -9,10 +9,6 @@ import { HomeComponent } from './Components/home/home.component';
 import { UsersComponent } from './Components/Admin/users/users.component';
 import { ProductsComponent } from './Components/Admin/products/products.component';
 import { AddNewProductComponent } from './Components/Admin/add-new-product/add-new-product.component';
-import { CategoriesHomeComponent } from './Components/categories/categories-home/categories-home.component';
-import { StorageComponent } from './Components/categories/storage/storage.component';
-import { AccessoriesComponent } from './Components/categories/accessories/accessories.component';
-import { ComputersComponent } from './Components/categories/computers/computers.component';
 
 export const routes: Routes = [
   {
@@ -33,26 +29,6 @@ export const routes: Routes = [
         component: SignupComponent,
         canActivate: [authGuard],
       },
-      {
-        path: 'categories',
-        component: CategoriesHomeComponent,
-        canActivate: [authGuard],
-        children: [
-          {
-            path: 'storage',
-            component: StorageComponent,
-          },
-          {
-            path: 'accessories',
-            component: AccessoriesComponent,
-          },
-          {
-            path: 'computers',
-            component: ComputersComponent,
-          },
-        ],
-      },
-
       {
         path: 'dashboard',
         component: DashboardComponent,

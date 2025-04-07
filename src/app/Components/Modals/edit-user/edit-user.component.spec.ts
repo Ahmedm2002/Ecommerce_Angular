@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StorageComponent } from './storage.component';
+import { EditUserComponent } from './edit-user.component';
 
-describe('StorageComponent', () => {
-  let component: StorageComponent;
-  let fixture: ComponentFixture<StorageComponent>;
+describe('EditUserComponent', () => {
+  let component: EditUserComponent;
+  let fixture: ComponentFixture<EditUserComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StorageComponent]
+      imports: [EditUserComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StorageComponent);
+    fixture = TestBed.createComponent(EditUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

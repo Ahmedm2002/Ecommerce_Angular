@@ -49,7 +49,8 @@ export class SignupComponent {
         }
       },
       (error) => {
-        alert(`An error occured ${error}. Please try again`);
+        alert(`An unexpected error occured. Please try again`);
+        console.log(error);
       }
     );
   }

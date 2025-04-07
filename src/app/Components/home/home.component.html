@@ -5,12 +5,12 @@
       style="max-width: 320px"
       *ngFor="let product of productList"
     >
-      <!-- <img
-          [src]="product.imageUrl"
-          alt="Product Image"
-          [alt]="product.name"
-          class="card-img-top"
-        /> -->
+      <img
+        [src]="product.imageUrl"
+        alt="Product Image"
+        [alt]="product.name"
+        class="card-img-top"
+      />
       <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
         <p class="card-text">{{ product.description }}</p>

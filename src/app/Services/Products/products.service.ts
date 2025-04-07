@@ -20,4 +20,8 @@ export class ProductsService {
   newProduct(product: IProduct) {
     return this.http.post(`${this.apiUrl}products`, product);
   }
+
+  updateProduct(product: IProduct) {
+    return this.http.put(`${this.apiUrl}products/${product.id}`, product);
+  }
 }

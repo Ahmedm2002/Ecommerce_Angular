@@ -1,0 +1,97 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Product</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="updateProduct">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="name"
+              id="name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="price"
+              id="price"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Qunatity</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="quantity"
+              id="quantity"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="description"
+              id="description"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="imageUrl" class="form-label">Image Url</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="imageUrl"
+              id="imageUrl"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Select Category</label>
+            <select
+              id="category"
+              formControlName="role"
+              class="form-select"
+              aria-label="Default select example"
+              formControlName="category"
+            >
+              <option value="" selected></option>
+              <option value="Computers">Computers</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Storage">Storage</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="submit" (click)="onSubmit()" class="btn btn-warning">
+          Update Product
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

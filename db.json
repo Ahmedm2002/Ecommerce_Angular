@@ -127,13 +127,6 @@
       "role": "user"
     },
     {
-      "id": "fb9f20",
-      "name": "Rashid Ali",
-      "email": "rashid@a.com",
-      "password": "12345",
-      "role": "user"
-    },
-    {
       "id": "ce02",
       "name": "Ahmed",
       "email": "aa@a.com",
@@ -144,13 +137,12 @@
   "products": [
     {
       "id": "100003",
-      "name": "Mechanical Keyboard",
       "category": "Accessories",
-      "brand": "Corsair",
+      "name": "Mechanical Keyboard",
       "price": 109.99,
+      "quantity": 6,
       "description": "Corsair K70 RGB mechanical keyboard with Cherry MX switches and customizable lighting.",
-      "imageUrl": "https://example.com/images/corsair-keyboard.jpg",
-      "quantity": 3
+      "imageUrl": "https://m.media-amazon.com/images/I/81HmFiMbQzL._AC_UF894,1000_QL80_.jpg"
     },
     {
       "id": "100004",
@@ -159,7 +151,7 @@
       "brand": "Samsung",
       "price": 349.99,
       "description": "Samsung 27-inch Smart Monitor with built-in streaming apps and USB-C connectivity.",
-      "imageUrl": "https://example.com/images/samsung-monitor.jpg",
+      "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/smart-monitors/08012023/M70C_005_R-Perspective_White_SCOM.jpg?$product-details-jpg$",
       "quantity": 0
     },
     {
@@ -169,7 +161,7 @@
       "brand": "Seagate",
       "price": 89.99,
       "description": "Seagate 1TB external hard drive with USB 3.0 and backup software.",
-      "imageUrl": "https://example.com/images/seagate-harddrive.jpg",
+      "imageUrl": "https://computerchoice.pk/wp-content/uploads/2023/09/Seagate-One-Touch-1TB-Portable-External-Hard-Drive-.png",
       "quantity": 7
     },
     {
@@ -179,7 +171,7 @@
       "brand": "Razer",
       "price": 129.99,
       "description": "Razer Kraken Ultimate gaming headset with surround sound and noise-canceling microphone.",
-      "imageUrl": "https://example.com/images/razer-headset.jpg",
+      "imageUrl": "https://citycenter.jo/image/infopages/razer_headset/krakenultimate/drivers.png",
       "quantity": 12
     },
     {
@@ -189,7 +181,7 @@
       "brand": "ASUS",
       "price": 249.99,
       "description": "ASUS TUF 24-inch gaming monitor with 144Hz refresh rate and adaptive sync.",
-      "imageUrl": "https://example.com/images/asus-gaming-monitor.jpg",
+      "imageUrl": "https://rbtechngames.com/wp-content/uploads/2023/06/rbtech_asus_vg248qg_2.png",
       "quantity": 2
     },
     {
@@ -199,7 +191,7 @@
       "brand": "Logitech",
       "price": 59.99,
       "description": "Logitech C920 HD Pro webcam for video streaming and conferencing.",
-      "imageUrl": "https://example.com/images/logitech-webcam.jpg",
+      "imageUrl": "https://www.logitech.com/content/dam/logitech/en/products/webcams/c920/gallery/c920-gallery-2.png",
       "quantity": 0
     },
     {
@@ -209,7 +201,7 @@
       "brand": "Anker",
       "price": 99.99,
       "description": "Anker USB-C docking station with dual display support and fast charging capabilities.",
-      "imageUrl": "https://example.com/images/anker-dock.jpg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0491/8460/4324/products/A83800A1-Anker_553_USB-C_Hub_8-in-1_5.png?v=1672388760",
       "quantity": 8
     },
     {
@@ -219,7 +211,7 @@
       "brand": "Apple",
       "price": 329.99,
       "description": "Apple iPad 10.2-inch Wi-Fi 32GB with Retina display and A12 Bionic chip.",
-      "imageUrl": "https://example.com/images/apple-ipad.jpg",
+      "imageUrl": "https://laptopzone.co.zw/wp-content/uploads/2020/11/Apple-iPad-8th-Gen-2020-10.2in-Wi-Fi.png",
       "quantity": 3
     },
     {
@@ -229,7 +221,7 @@
       "brand": "JBL",
       "price": 59.99,
       "description": "JBL Flip 5 portable Bluetooth speaker with deep bass and waterproof design.",
-      "imageUrl": "https://example.com/images/jbl-speaker.jpg",
+      "imageUrl": "https://kh.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcf4351d2/JBL_Flip5_Product%20Photo_Side_RiverTeal-1605x1605-DS3.png?sw=537&sfrm=png",
       "quantity": 6
     },
     {
@@ -239,28 +231,26 @@
       "brand": "Samsung",
       "price": 999.99,
       "description": "Samsung Galaxy S21 with 5G connectivity, 128GB storage, and a 64MP camera.",
-      "imageUrl": "https://example.com/images/samsung-s21.jpg",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0401/9070/5820/files/main-kv.png?v=1643012162",
       "quantity": 1
     },
     {
       "id": "100013",
-      "name": "Smartwatch",
       "category": "Accessories",
-      "brand": "Apple",
+      "name": "Smartwatch",
       "price": 399.99,
+      "quantity": 2,
       "description": "Apple Watch Series 6 with blood oxygen sensor and ECG capabilities.",
-      "imageUrl": "https://example.com/images/apple-watch.jpg",
-      "quantity": 0
+      "imageUrl": "https://www.spark.co.nz/etc/designs/telecomcms/canvas/content/telecomcms/business/shop/apple-shop/apple-watch/apple-watch-series-6/_jcr_content/root/responsivegrid/importerex/img/appleWatchSeries6__hero.png"
     },
     {
       "id": "100014",
-      "name": "Wireless Earbuds",
       "category": "Accessories",
-      "brand": "Sony",
+      "name": "Wireless Earbuds",
       "price": 149.99,
+      "quantity": 6,
       "description": "Sony WF-1000XM4 noise-canceling wireless earbuds with long battery life.",
-      "imageUrl": "https://example.com/images/sony-earbuds.jpg",
-      "quantity": 4
+      "imageUrl": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Sony_WF_1000XM4_Wireless_Noise_Cancellin-Sony-2dfe1-399167.png"
     },
     {
       "id": "100015",
@@ -269,7 +259,7 @@
       "brand": "Anker",
       "price": 39.99,
       "description": "Anker PowerCore 10000mAh portable power bank for fast charging.",
-      "imageUrl": "https://example.com/images/anker-powerbank.jpg",
+      "imageUrl": "https://astorekw.com.qa/cdn/shop/files/5ccc0765557b32933ee34d3ccc3e0758_fca5427d-02a3-4c7d-81b9-88ce01b112ec.png?v=1722870738",
       "quantity": 9
     },
     {
@@ -279,7 +269,7 @@
       "brand": "LG",
       "price": 799.99,
       "description": "LG 55-inch 4K UHD Smart TV with webOS and Dolby Vision support.",
-      "imageUrl": "https://example.com/images/lg-4k-tv.jpg",
+      "imageUrl": "https://cairosales.com/100976-large_default/lg-oled-evo-cs3-55-4k-smart-tv-oled55cs3va.jpg",
       "quantity": 6
     },
     {
@@ -289,7 +279,7 @@
       "brand": "Belkin",
       "price": 29.99,
       "description": "Belkin BoostCharge 10W wireless charger for fast charging.",
-      "imageUrl": "https://example.com/images/belkin-charger.jpg",
+      "imageUrl": "https://jo-cell.com/cdn/shop/products/Belkin_Magnetic_Wireless_Car_Charger_10W_Fast_Charging_-_Black.webp?v=1734437205",
       "quantity": 0
     },
     {
@@ -299,7 +289,7 @@
       "brand": "DXRacer",
       "price": 299.99,
       "description": "DXRacer Formula Series gaming chair with ergonomic design and adjustable armrests.",
-      "imageUrl": "https://example.com/images/dxracer-chair.jpg",
+      "imageUrl": "https://onexzone.com/cdn/shop/files/r12.png?v=1705560102&width=640",
       "quantity": 10
     },
     {
@@ -309,7 +299,7 @@
       "brand": "Samsung",
       "price": 129.99,
       "description": "Samsung T5 500GB portable external SSD with USB-C interface.",
-      "imageUrl": "https://example.com/images/samsung-ssd.jpg",
+      "imageUrl": "https://citycenter.jo/image/infopages/samsung_t5/topImage-blue.png",
       "quantity": 3
     },
     {
@@ -319,17 +309,19 @@
       "brand": "HP",
       "price": 649.99,
       "description": "HP Pavilion desktop with Intel Core i5, 8GB RAM, 1TB HDD, and Windows 10.",
-      "imageUrl": "https://example.com/images/hp-desktop.jpg",
+      "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05952175.png",
       "quantity": 0
     },
     {
-      "id": "b4cb",
-      "name": "Mouse",
-      "price": 0,
-      "description": "Description",
+      "id": "bd10",
       "category": "Computers",
-      "imageUrl": "home/ahmedmujtaba/Pictures/goldenPearl.png",
-      "quantity": 0
+      "name": "RGB Keyboard",
+      "price": 499,
+      "quantity": 25,
+      "description": "This RGB keyboard features customizable lighting with a spectrum of vibrant colors, enhancing your gaming and typing experience.",
+      "imageUrl": "https://havitstore.pk/cdn/shop/files/KB870L_5.png?v=1699356887"
     }
-  ]
+  ],
+  "categories": [],
+  "orders": []
 }
