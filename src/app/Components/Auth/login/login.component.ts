@@ -34,7 +34,10 @@ export class LoginComponent implements OnInit {
   login() {
     this.userService.login(this.loginForm.value).subscribe((res: any) => {
       this.loggInUser = res[0];
-
+      if (!this.loggInUser) {
+        alert('Email not found. Please try again');
+        return;
+      }
       if (this.loggInUser.password == this.loginForm.value['password']) {
         if (localStorage.getItem('user')) {
           localStorage.removeItem('user');
@@ -51,8 +54,8 @@ export class LoginComponent implements OnInit {
   }
 
   loginForm: FormGroup = new FormGroup({
-    email: new FormControl('a@a.com', [Validators.required, Validators.email]),
-    password: new FormControl('12345', [
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [
       Validators.required,
       Validators.minLength(4),
     ]),

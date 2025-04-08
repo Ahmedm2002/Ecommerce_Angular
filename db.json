@@ -132,6 +132,13 @@
       "email": "aa@a.com",
       "password": "12345",
       "role": "user"
+    },
+    {
+      "id": "e124",
+      "name": "M Hamza",
+      "email": "hamza@m.com",
+      "password": "hamza",
+      "role": "user"
     }
   ],
   "products": [
@@ -140,7 +147,7 @@
       "category": "Accessories",
       "name": "Mechanical Keyboard",
       "price": 109.99,
-      "quantity": 6,
+      "quantity": 10,
       "description": "Corsair K70 RGB mechanical keyboard with Cherry MX switches and customizable lighting.",
       "imageUrl": "https://m.media-amazon.com/images/I/81HmFiMbQzL._AC_UF894,1000_QL80_.jpg"
     },
