@@ -60,7 +60,9 @@
           type="submit"
           (click)="onSubmit()"
           class="btn btn-warning"
-          [disabled]="checkEquality()"
+          [disabled]="
+            this.updateUser.controls['role'].value === '' || checkEquality()
+          "
         >
           Update User
         </button>

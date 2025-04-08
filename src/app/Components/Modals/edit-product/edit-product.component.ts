@@ -10,7 +10,7 @@ import { IProduct } from '../../../Models/Interface/product.interface';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ProductsService } from '../../../Services/Products/products.service';
-import { isEqual } from 'lodash';
+
 @Component({
   selector: 'app-edit-product',
   imports: [CommonModule, ReactiveFormsModule],
@@ -29,12 +29,15 @@ export class EditProductComponent implements OnChanges {
     }
   }
 
+  ngOnInit() {
+    console.log('Input Product: ', this.product);
+  }
+
   onSubmit() {
     this.productsServ.updateProduct(this.updateProduct.value).subscribe(
       (res: any) => {
         alert(`Product updated successfully`);
         console.log(res);
-
         this.updatedProduct.emit(this.updateProduct.value);
       },
       (error) => {
@@ -52,10 +55,14 @@ export class EditProductComponent implements OnChanges {
     quantity: new FormControl(''),
     description: new FormControl(''),
     imageUrl: new FormControl(''),
-    brand: new FormControl(''),
   });
 
-  checkProdEquality(): boolean {
-    return !isEqual(this.product, this.updateProduct.value);
+  isProductEqual(): boolean {
+    if (
+      JSON.stringify(this.product) == JSON.stringify(this.updateProduct.value)
+    ) {
+      return true;
+    }
+    return false;
   }
 }

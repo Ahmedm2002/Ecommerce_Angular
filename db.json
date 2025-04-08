@@ -154,18 +154,9 @@
       "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/smart-monitors/08012023/M70C_005_R-Perspective_White_SCOM.jpg?$product-details-jpg$"
     },
     {
-      "id": "100005",
-      "name": "External Hard Drive",
-      "category": "Storage",
-      "price": 89.99,
-      "description": "Seagate 1TB external hard drive with USB 3.0 and backup software.",
-      "imageUrl": "https://computerchoice.pk/wp-content/uploads/2023/09/Seagate-One-Touch-1TB-Portable-External-Hard-Drive-.png",
-      "quantity": 7
-    },
-    {
       "id": "100006",
-      "name": "Gaming Headset",
       "category": "Accessories",
+      "name": "Gaming Headset",
       "price": 129.99,
       "description": "Razer Kraken Ultimate gaming headset with surround sound and noise-canceling microphone.",
       "imageUrl": "https://citycenter.jo/image/infopages/razer_headset/krakenultimate/drivers.png",
@@ -173,8 +164,8 @@
     },
     {
       "id": "100007",
-      "name": "Gaming Monitor",
       "category": "Computers",
+      "name": "Gaming Monitor",
       "price": 249.99,
       "description": "ASUS TUF 24-inch gaming monitor with 144Hz refresh rate and adaptive sync.",
       "imageUrl": "https://rbtechngames.com/wp-content/uploads/2023/06/rbtech_asus_vg248qg_2.png",
@@ -182,8 +173,8 @@
     },
     {
       "id": "100008",
-      "name": "Webcam",
       "category": "Accessories",
+      "name": "Webcam",
       "price": 59.99,
       "description": "Logitech C920 HD Pro webcam for video streaming and conferencing.",
       "imageUrl": "https://www.logitech.com/content/dam/logitech/en/products/webcams/c920/gallery/c920-gallery-2.png",
@@ -191,8 +182,8 @@
     },
     {
       "id": "100009",
-      "name": "USB-C Docking Station",
       "category": "Accessories",
+      "name": "USB-C Docking Station",
       "price": 99.99,
       "description": "Anker USB-C docking station with dual display support and fast charging capabilities.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0491/8460/4324/products/A83800A1-Anker_553_USB-C_Hub_8-in-1_5.png?v=1672388760",
@@ -218,12 +209,12 @@
     },
     {
       "id": "100012",
-      "name": "Smartphone",
       "category": "Computers",
+      "name": "Smartphone",
       "price": 999.99,
+      "quantity": 1,
       "description": "Samsung Galaxy S21 with 5G connectivity, 128GB storage, and a 64MP camera.",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0401/9070/5820/files/main-kv.png?v=1643012162",
-      "quantity": 1
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0401/9070/5820/files/main-kv.png?v=1643012162"
     },
     {
       "id": "100013",
@@ -245,8 +236,8 @@
     },
     {
       "id": "100015",
-      "name": "Power Bank",
       "category": "Accessories",
+      "name": "Power Bank",
       "price": 39.99,
       "description": "Anker PowerCore 10000mAh portable power bank for fast charging.",
       "imageUrl": "https://astorekw.com.qa/cdn/shop/files/5ccc0765557b32933ee34d3ccc3e0758_fca5427d-02a3-4c7d-81b9-88ce01b112ec.png?v=1722870738",
@@ -254,8 +245,8 @@
     },
     {
       "id": "100016",
-      "name": "4K TV",
       "category": "Computers",
+      "name": "4K TV",
       "price": 799.99,
       "description": "LG 55-inch 4K UHD Smart TV with webOS and Dolby Vision support.",
       "imageUrl": "https://cairosales.com/100976-large_default/lg-oled-evo-cs3-55-4k-smart-tv-oled55cs3va.jpg",
@@ -272,8 +263,8 @@
     },
     {
       "id": "100018",
-      "name": "Gaming Chair",
       "category": "Accessories",
+      "name": "Gaming Chair",
       "price": 299.99,
       "description": "DXRacer Formula Series gaming chair with ergonomic design and adjustable armrests.",
       "imageUrl": "https://onexzone.com/cdn/shop/files/r12.png?v=1705560102&width=640",
@@ -290,8 +281,8 @@
     },
     {
       "id": "100020",
-      "name": "Desktop Computer",
       "category": "Computers",
+      "name": "Desktop Computer",
       "price": 649.99,
       "description": "HP Pavilion desktop with Intel Core i5, 8GB RAM, 1TB HDD, and Windows 10.",
       "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05952175.png",
@@ -314,8 +305,15 @@
       "quantity": 15,
       "description": "Logitech G502 X Wired Gaming Mouse - LIGHTFORCE hybrid optical-mechanical primary switches, HERO 25K gaming sensor, compatible with PC - macOS/Windows - Black",
       "imageUrl": "https://sutechngames.com/wp-content/uploads/2024/05/Logitech-G502-X-Wired-Hyper-Fast-Mouse.webp"
+    },
+    {
+      "id": "2bff",
+      "category": "Accessories",
+      "name": "Earphone Ronin R-9",
+      "price": 47.99,
+      "quantity": 2,
+      "description": "Ronin R-9 Android hands freeas these handsfree are designed to provide crystal clear sound quality and claim to change your listening experience.",
+      "imageUrl": "https://ronin.pk/cdn/shop/articles/Does_R-9_Android_Handsfree_Provide_Crystal_Clear_Sound_Quality.jpg?v=1716806273"
     }
-  ],
-  "categories": [],
-  "orders": []
+  ]
 }

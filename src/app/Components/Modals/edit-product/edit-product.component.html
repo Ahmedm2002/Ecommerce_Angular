@@ -50,12 +50,12 @@
 
           <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <input
+            <textarea
               type="text"
               class="form-control"
-              formControlName="description"
               id="description"
-            />
+              formControlName="description"
+            ></textarea>
           </div>
 
           <div class="mb-3">
@@ -92,7 +92,7 @@
           type="submit"
           (click)="onSubmit()"
           class="btn btn-warning"
-          [disabled]="checkProdEquality()"
+          [disabled]="isProductEqual()"
         >
           Update Product
         </button>

@@ -12,7 +12,7 @@ import { IUser } from '../../../Models/Interface/user.interface';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { UsersService } from '../../../Services/User/users.service';
-import { isEqual } from 'lodash';
+
 @Component({
   selector: 'app-edit-user',
   imports: [ReactiveFormsModule, CommonModule],
@@ -66,6 +66,8 @@ export class EditUserComponent implements OnChanges, OnInit {
   }
 
   checkEquality(): boolean {
-    return !isEqual(this.updateUser.value, this.user);
+    return this.user.role == this.updateUser.controls['role'].value
+      ? true
+      : false;
   }
 }
