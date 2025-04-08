@@ -124,7 +124,7 @@
       "name": "Yasir Mehmood",
       "email": "yasir@a.com",
       "password": "12345",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "ce02",
@@ -146,19 +146,17 @@
     },
     {
       "id": "100004",
-      "name": "Smart Monitor",
       "category": "Computers",
-      "brand": "Samsung",
+      "name": "Smart Monitor",
       "price": 349.99,
+      "quantity": 0,
       "description": "Samsung 27-inch Smart Monitor with built-in streaming apps and USB-C connectivity.",
-      "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/smart-monitors/08012023/M70C_005_R-Perspective_White_SCOM.jpg?$product-details-jpg$",
-      "quantity": 0
+      "imageUrl": "https://image-us.samsung.com/SamsungUS/home/computing/monitors/smart-monitors/08012023/M70C_005_R-Perspective_White_SCOM.jpg?$product-details-jpg$"
     },
     {
       "id": "100005",
       "name": "External Hard Drive",
       "category": "Storage",
-      "brand": "Seagate",
       "price": 89.99,
       "description": "Seagate 1TB external hard drive with USB 3.0 and backup software.",
       "imageUrl": "https://computerchoice.pk/wp-content/uploads/2023/09/Seagate-One-Touch-1TB-Portable-External-Hard-Drive-.png",
@@ -168,7 +166,6 @@
       "id": "100006",
       "name": "Gaming Headset",
       "category": "Accessories",
-      "brand": "Razer",
       "price": 129.99,
       "description": "Razer Kraken Ultimate gaming headset with surround sound and noise-canceling microphone.",
       "imageUrl": "https://citycenter.jo/image/infopages/razer_headset/krakenultimate/drivers.png",
@@ -178,7 +175,6 @@
       "id": "100007",
       "name": "Gaming Monitor",
       "category": "Computers",
-      "brand": "ASUS",
       "price": 249.99,
       "description": "ASUS TUF 24-inch gaming monitor with 144Hz refresh rate and adaptive sync.",
       "imageUrl": "https://rbtechngames.com/wp-content/uploads/2023/06/rbtech_asus_vg248qg_2.png",
@@ -188,7 +184,6 @@
       "id": "100008",
       "name": "Webcam",
       "category": "Accessories",
-      "brand": "Logitech",
       "price": 59.99,
       "description": "Logitech C920 HD Pro webcam for video streaming and conferencing.",
       "imageUrl": "https://www.logitech.com/content/dam/logitech/en/products/webcams/c920/gallery/c920-gallery-2.png",
@@ -198,7 +193,6 @@
       "id": "100009",
       "name": "USB-C Docking Station",
       "category": "Accessories",
-      "brand": "Anker",
       "price": 99.99,
       "description": "Anker USB-C docking station with dual display support and fast charging capabilities.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0491/8460/4324/products/A83800A1-Anker_553_USB-C_Hub_8-in-1_5.png?v=1672388760",
@@ -206,29 +200,26 @@
     },
     {
       "id": "100010",
-      "name": "Tablet",
       "category": "Computers",
-      "brand": "Apple",
+      "name": "Tablet",
       "price": 329.99,
+      "quantity": 3,
       "description": "Apple iPad 10.2-inch Wi-Fi 32GB with Retina display and A12 Bionic chip.",
-      "imageUrl": "https://laptopzone.co.zw/wp-content/uploads/2020/11/Apple-iPad-8th-Gen-2020-10.2in-Wi-Fi.png",
-      "quantity": 3
+      "imageUrl": "https://laptopzone.co.zw/wp-content/uploads/2020/11/Apple-iPad-8th-Gen-2020-10.2in-Wi-Fi.png"
     },
     {
       "id": "100011",
-      "name": "Bluetooth Speaker",
       "category": "Accessories",
-      "brand": "JBL",
+      "name": "Bluetooth Speaker",
       "price": 59.99,
+      "quantity": 6,
       "description": "JBL Flip 5 portable Bluetooth speaker with deep bass and waterproof design.",
-      "imageUrl": "https://kh.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcf4351d2/JBL_Flip5_Product%20Photo_Side_RiverTeal-1605x1605-DS3.png?sw=537&sfrm=png",
-      "quantity": 6
+      "imageUrl": "https://kh.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcf4351d2/JBL_Flip5_Product%20Photo_Side_RiverTeal-1605x1605-DS3.png?sw=537&sfrm=png"
     },
     {
       "id": "100012",
       "name": "Smartphone",
       "category": "Computers",
-      "brand": "Samsung",
       "price": 999.99,
       "description": "Samsung Galaxy S21 with 5G connectivity, 128GB storage, and a 64MP camera.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0401/9070/5820/files/main-kv.png?v=1643012162",
@@ -256,7 +247,6 @@
       "id": "100015",
       "name": "Power Bank",
       "category": "Accessories",
-      "brand": "Anker",
       "price": 39.99,
       "description": "Anker PowerCore 10000mAh portable power bank for fast charging.",
       "imageUrl": "https://astorekw.com.qa/cdn/shop/files/5ccc0765557b32933ee34d3ccc3e0758_fca5427d-02a3-4c7d-81b9-88ce01b112ec.png?v=1722870738",
@@ -266,7 +256,6 @@
       "id": "100016",
       "name": "4K TV",
       "category": "Computers",
-      "brand": "LG",
       "price": 799.99,
       "description": "LG 55-inch 4K UHD Smart TV with webOS and Dolby Vision support.",
       "imageUrl": "https://cairosales.com/100976-large_default/lg-oled-evo-cs3-55-4k-smart-tv-oled55cs3va.jpg",
@@ -274,19 +263,17 @@
     },
     {
       "id": "100017",
-      "name": "Wireless Charger",
       "category": "Accessories",
-      "brand": "Belkin",
+      "name": "Wireless Charger",
       "price": 29.99,
+      "quantity": 0,
       "description": "Belkin BoostCharge 10W wireless charger for fast charging.",
-      "imageUrl": "https://jo-cell.com/cdn/shop/products/Belkin_Magnetic_Wireless_Car_Charger_10W_Fast_Charging_-_Black.webp?v=1734437205",
-      "quantity": 0
+      "imageUrl": "https://jo-cell.com/cdn/shop/products/Belkin_Magnetic_Wireless_Car_Charger_10W_Fast_Charging_-_Black.webp?v=1734437205"
     },
     {
       "id": "100018",
       "name": "Gaming Chair",
       "category": "Accessories",
-      "brand": "DXRacer",
       "price": 299.99,
       "description": "DXRacer Formula Series gaming chair with ergonomic design and adjustable armrests.",
       "imageUrl": "https://onexzone.com/cdn/shop/files/r12.png?v=1705560102&width=640",
@@ -294,19 +281,17 @@
     },
     {
       "id": "100019",
-      "name": "External SSD",
       "category": "Storage",
-      "brand": "Samsung",
-      "price": 129.99,
+      "name": "Samsung USB 32GB Flash Drive",
+      "price": 29.99,
+      "quantity": 2,
       "description": "Samsung T5 500GB portable external SSD with USB-C interface.",
-      "imageUrl": "https://citycenter.jo/image/infopages/samsung_t5/topImage-blue.png",
-      "quantity": 3
+      "imageUrl": "https://www.hkarimbuksh.com/cdn/shop/products/4d4edb4ba8b9cdcffc31469ab3ce52c8.jpg?v=1630133673"
     },
     {
       "id": "100020",
       "name": "Desktop Computer",
       "category": "Computers",
-      "brand": "HP",
       "price": 649.99,
       "description": "HP Pavilion desktop with Intel Core i5, 8GB RAM, 1TB HDD, and Windows 10.",
       "imageUrl": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05952175.png",
@@ -320,6 +305,15 @@
       "quantity": 25,
       "description": "This RGB keyboard features customizable lighting with a spectrum of vibrant colors, enhancing your gaming and typing experience.",
       "imageUrl": "https://havitstore.pk/cdn/shop/files/KB870L_5.png?v=1699356887"
+    },
+    {
+      "id": "25c5",
+      "category": "Computers",
+      "name": "Logitech Gaming Mouse",
+      "price": 54.81,
+      "quantity": 15,
+      "description": "Logitech G502 X Wired Gaming Mouse - LIGHTFORCE hybrid optical-mechanical primary switches, HERO 25K gaming sensor, compatible with PC - macOS/Windows - Black",
+      "imageUrl": "https://sutechngames.com/wp-content/uploads/2024/05/Logitech-G502-X-Wired-Hyper-Fast-Mouse.webp"
     }
   ],
   "categories": [],

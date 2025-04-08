@@ -26,7 +26,12 @@
             {{ user.role }}
           </td>
           <td>
-            <button class="btn btn-primary" (click)="editUser(user)">
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              (click)="editUser(user)"
+            >
               Edit
             </button>
             <button class="btn btn-danger ms-2" (click)="deleteUser(user)">
@@ -42,4 +47,9 @@
       <h4>No users found.</h4>
     </div>
   </ng-template>
+
+  <app-edit-user
+    [user]="toBeUpdaetdUser"
+    (updatedUser)="handleUpdate($event)"
+  ></app-edit-user>
 </div>

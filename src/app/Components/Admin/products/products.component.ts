@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, ViewChild } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ProductsService } from '../../../Services/Products/products.service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -19,14 +19,10 @@ export class ProductsComponent implements OnInit {
       this.allProducts = res;
     });
   }
-
-  @ViewChild(EditProductComponent) modal!: EditProductComponent;
-
   toBeEdited: IProduct = {};
 
   editProduct(product: IProduct) {
     this.toBeEdited = product;
-    this.modal.isModalOpened = true;
   }
 
   deleteProduct(delProduct: any) {

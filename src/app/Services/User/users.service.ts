@@ -25,4 +25,7 @@ export class UsersService {
   login(user: any) {
     return this.http.get(`${this.apiUrl}users?email=${user?.email}`);
   }
+  updateUser(user: IUser) {
+    return this.http.put(`${this.apiUrl}users/${user.id}`, user);
+  }
 }

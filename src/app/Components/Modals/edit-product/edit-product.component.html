@@ -88,7 +88,12 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <button type="submit" (click)="onSubmit()" class="btn btn-warning">
+        <button
+          type="submit"
+          (click)="onSubmit()"
+          class="btn btn-warning"
+          [disabled]="checkProdEquality()"
+        >
           Update Product
         </button>
       </div>

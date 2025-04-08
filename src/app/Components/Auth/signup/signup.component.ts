@@ -45,7 +45,7 @@ export class SignupComponent {
         if (newUser.role == 'user') {
           this.router.navigateByUrl('/');
         } else {
-          this.router.navigateByUrl('dashbaord');
+          this.router.navigateByUrl('dashboard');
         }
       },
       (error) => {

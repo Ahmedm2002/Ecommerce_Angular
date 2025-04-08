@@ -10,7 +10,7 @@ import { IProduct } from '../../../Models/Interface/product.interface';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ProductsService } from '../../../Services/Products/products.service';
-
+import { isEqual } from 'lodash';
 @Component({
   selector: 'app-edit-product',
   imports: [CommonModule, ReactiveFormsModule],
@@ -21,21 +21,11 @@ export class EditProductComponent implements OnChanges {
   @Input() product!: IProduct;
   @Output() updatedProduct = new EventEmitter<IProduct>();
 
-  isModalOpened: boolean = false;
-
   constructor(public productsServ: ProductsService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['product'] && this.product) {
-      this.updateProduct.patchValue({
-        name: this.product.name,
-        price: this.product.price,
-        quantity: this.product.quantity,
-        description: this.product.description,
-        imageUrl: this.product.imageUrl,
-        id: this.product.id,
-        category: this.product.category,
-      });
+      this.updateProduct.patchValue(this.product);
     }
   }
 
@@ -46,7 +36,6 @@ export class EditProductComponent implements OnChanges {
         console.log(res);
 
         this.updatedProduct.emit(this.updateProduct.value);
-        this.isModalOpened = false;
       },
       (error) => {
         alert('An unexpected error occured. Please try again');
@@ -63,5 +52,10 @@ export class EditProductComponent implements OnChanges {
     quantity: new FormControl(''),
     description: new FormControl(''),
     imageUrl: new FormControl(''),
+    brand: new FormControl(''),
   });
+
+  checkProdEquality(): boolean {
+    return !isEqual(this.product, this.updateProduct.value);
+  }
 }

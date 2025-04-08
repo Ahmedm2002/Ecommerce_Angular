@@ -2,23 +2,25 @@ import { Component, inject, OnInit } from '@angular/core';
 import { UsersService } from '../../../Services/User/users.service';
 import { IUser } from '../../../Models/Interface/user.interface';
 import { CommonModule } from '@angular/common';
+import { EditUserComponent } from '../../Modals/edit-user/edit-user.component';
 
 @Component({
   selector: 'app-users',
-  imports: [CommonModule],
+  imports: [CommonModule, EditUserComponent],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css',
 })
 export class UsersComponent implements OnInit {
   allUsers: IUser[] = [];
   userService = inject(UsersService);
+  toBeUpdaetdUser: IUser = {};
   ngOnInit(): void {
     this.userService.getAllUsers().subscribe((res: any) => {
       this.allUsers = res;
     });
   }
   editUser(user: IUser) {
-    console.log(user);
+    this.toBeUpdaetdUser = user;
   }
   deleteUser(userDel: any) {
     if (userDel.role == 'admin') {
@@ -34,5 +36,9 @@ export class UsersComponent implements OnInit {
         });
       }
     }
+  }
+  handleUpdate(updatedUser: any) {
+    const index = this.allUsers.findIndex((user) => user.id == updatedUser.id);
+    this.allUsers[index] = updatedUser;
   }
 }
