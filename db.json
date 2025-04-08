@@ -216,11 +216,11 @@
     },
     {
       "id": "100012",
-      "category": "Computers",
-      "name": "Smartphone",
+      "category": "Mobile Phones",
+      "name": "Samsung Galaxy S21",
       "price": 999.99,
       "quantity": 1,
-      "description": "Samsung Galaxy S21 with 5G connectivity, 128GB storage, and a 64MP camera.",
+      "description": "Samsung flagship phone with 5G connectivity, 128GB storage, and a 64MP camera.",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0401/9070/5820/files/main-kv.png?v=1643012162"
     },
     {
@@ -321,6 +321,15 @@
       "quantity": 2,
       "description": "Ronin R-9 Android hands freeas these handsfree are designed to provide crystal clear sound quality and claim to change your listening experience.",
       "imageUrl": "https://ronin.pk/cdn/shop/articles/Does_R-9_Android_Handsfree_Provide_Crystal_Clear_Sound_Quality.jpg?v=1716806273"
+    },
+    {
+      "id": "731f",
+      "name": "Apple iPhone 16 Pro Max",
+      "price": 1099.99,
+      "description": "iPhone 16 Pro and iPhone 16 Pro Max. Built for Apple Intelligence. Durable titanium design. Camera Control. 4K 120 fps Dolby Vision. A18 Pro chip.",
+      "category": "Mobile Phones",
+      "imageUrl": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121032-iphone-16-pro-max.png",
+      "quantity": 4
     }
   ]
 }

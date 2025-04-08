@@ -27,5 +27,11 @@ const cartReducer = createReducer(
       items: updatedCart,
       totalPrice: updatedPrice,
     };
-  })
+  }),
+  on(emptyCart, () => ({ items: [], totalPrice: 0 })),
+  on(updateItem, (state, { item }) => ({
+    ...state,
+    item,
+    totalPrice: state.items.reduce((total, item) => total + item.price, 0),
+  }))
 );
