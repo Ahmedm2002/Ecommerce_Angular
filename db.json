@@ -199,7 +199,7 @@
     {
       "id": "100010",
       "category": "Computers",
-      "name": "Tablet",
+      "name": "Apple Ipad",
       "price": 329.99,
       "quantity": 3,
       "description": "Apple iPad 10.2-inch Wi-Fi 32GB with Retina display and A12 Bionic chip.",
@@ -226,7 +226,7 @@
     {
       "id": "100013",
       "category": "Accessories",
-      "name": "Smartwatch",
+      "name": "Apple Watch 6",
       "price": 399.99,
       "quantity": 2,
       "description": "Apple Watch Series 6 with blood oxygen sensor and ECG capabilities.",

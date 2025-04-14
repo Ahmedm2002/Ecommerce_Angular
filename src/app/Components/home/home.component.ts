@@ -22,4 +22,8 @@ export class HomeComponent implements OnInit {
       this.productList = arrayShuffle(this.productList);
     });
   }
+
+  addToCart(product: IProduct) {
+    console.log(product);
+  }
 }
